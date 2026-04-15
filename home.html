@@ -3,58 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Pagina de Prueba</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./estilos/estilos.css" />
+
+    <title>Mi Página de Prueba</title>
   </head>
+
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a
-            href="https://www.pangea.es/es-ES/viaje-a/africa/kenia/?utm_source=google&utm_medium=cpc&utm_campaign=ES_BCN_search_nb_restotop&gad_source=1&gad_campaignid=23500281359&gbraid=0AAAAACg6gl8BgpTbyypE1OEV5sLeNRADW&gclid=CjwKCAjw7vzOBhBxEiwAc7WNr4mhLwLpt3EyWl_BzzfUGUgCIt_6pLvt2xpsn7h3TbO-9BQWZic1LRoCzccQAvD_BwE"
-            >Inicio</a
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img class="logoimg" src="./imagenes/logo.png" alt="Logo de la empresa" />
+        </a>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
           >
-        </li>
-        <li><a href="#about">Acerca de</a></li>
-        <li><a href="https://www.pangea.es/es-ES/start-trip/">Contacto</a></li>
-        <li><a href="./index.html">página fea</a></li>
-      </ul>
-    </nav>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="https://safariafricano.es/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://safariafricano.es/sobre-nosotros/">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <h1>Bienvenido a mi página de prueba</h1>
+
     <p>
-      Descubre la belleza y la diversidad de países de África Oriental como
-      Uganda, Ruanda, Tanzania, Kenia y la República Democrática del Congo con
-      nuestros tours exclusivos. Sumérgete en la rica cultura, los paisajes
-      impresionantes y la fauna única de estos destinos fascinantes.
+      Descubre la belleza y la diversidad de países de África Oriental como Uganda,
+      Ruanda, Tanzania, Kenia y la República Democrática del Congo.
     </p>
+
     <ul>
       <li>Elemento 1</li>
       <li>Elemento 2</li>
       <li>Elemento 3</li>
     </ul>
-    <div>
-      <p>Este es un párrafo dentro de un div.</p>
-      <img
-        src="./imagenes/namibia.jpg"
-        alt="el mejor destino para viajar a Africa"
-      />
+
+    <div class="container-fluid text-center top">
+      <h2>DISFRUTA DE NUESTROS SAFARIS</h2>
+    </div>   
+    <div class="container my-4">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 shadow caja2">
+          <img src="./imagenes/safari.webp" class="img-fluid safari-img" alt="safari" />
+        </div>
+
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+          <p class="text-center">TODO TIPO DE SAFARIS</p>
+        </div>
+      </div>
+    </div>    
+    <div class="container my-4">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+          <p class="text-center">SAFARIS PARA PAREJAS</p>
+        </div>
+
+        <div class="col-12 col-md-6 shadow caja2">
+          <img src="./imagenes/Turkish.jpg" class="img-fluid safari-img" alt="safari parejas" />
+        </div>
+      </div>
+    </div>   
+    <div class="container my-4">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 shadow caja2">
+          <img src="./imagenes/namibia.jpg" class="img-fluid safari-img" alt="namibia" />
+        </div>
+
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+          <p class="text-center">LOS MEJORES SAFARIS</p>
+        </div>
+      </div>
     </div>
-    <div>
-      <p>Este es otro párrafo dentro de un div.</p>
-      <img src="./imagenes/safari.webp" alt="safari en Africa" />
-    </div>
-    <div>
-      <p>Este es un tercer párrafo dentro de un div.</p>
-      <img src="./imagenes/Turkish.jpg" alt="Africa" />
-    </div>
-    <div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=..."
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-    </div>
+    <footer class="mt-5 py-4 text-center border-top">
+      <p class="copy text-primary mb-0">&copy; Copyright 2026</p>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
