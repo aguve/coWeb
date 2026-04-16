@@ -49,3 +49,24 @@ header {
 footer {
     margin-top: auto;
 }
+.cositas{
+    color: purple;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+.otras-cosas{
+    color: green;
+    text-align: center;
+    font-size: large;
+}
+h1{
+    text-align: center;
+}
+strong{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+a:link{
+    text-align: center;
+}
