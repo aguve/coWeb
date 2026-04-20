@@ -68,6 +68,33 @@
     </div>
 
   </div>
+
+  <button id="open-btn">Safari Tour</button>
+  
+  
+  <div class="popup-wrapper" id="popup">
+    <div class="popup-content">
+      <h2>Esto es Africa</h2>
+      <p>¡Andreu, Jimena, Blai!</p>
+      <a href="#" class="close-btn" id="close-btn">&times;</a>
+      <img src="./imagenes/afri.webp" alt="" class="imgAfrica">
+    </div>
+  </div>
+  <script>
+    const openBtn = document.getElementById('open-btn');
+      const closeBtn = document.getElementById('close-btn');
+      const popup = document.getElementById('popup');
+
+      openBtn.addEventListener('click', () => {
+        popup.classList.add('show');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        popup.classList.remove('show');
+      });
+
+  </script>
+
 </div>
    <footer class="mt-5 py-4 text-center border-top">
   <p class="copy text-primary mb-0">&copy; Copyright 2026</p>
